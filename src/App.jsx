@@ -1,10 +1,17 @@
-import React from 'react';
+import React from "react";
+import { AppWrapper, GlobalStyle, PrimaryContent } from "./AppStyle";
+import { TitleBar } from "./components/TitleBar/TitleBar";
+import { UserGraph } from "./components/UserGraph/UserGraph";
 
 export const App = () => {
-
     return (
-        <>
-            <h1>Insert your code 💕</h1>
-        </>
+        <AppWrapper>
+            <GlobalStyle />
+            <TitleBar value="DeVry Unofficial Community" />
+            <PrimaryContent>
+                <UserGraph />
+                <UserRoles />
+            </PrimaryContent>
+        </AppWrapper>
     );
 };
